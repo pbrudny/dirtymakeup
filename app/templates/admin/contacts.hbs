@@ -1,0 +1,5 @@
+{{#each model as |contact|}}
+<p>{{contact.email}} - {{contact.message}}
+    <button class="btn btn-danger btn-xs" {{action 'deleteContact' contact}}>Delete</button>
+</p>
+{{/each}}
